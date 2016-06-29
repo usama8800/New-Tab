@@ -1,0 +1,19 @@
+#search {
+	padding: 6px;
+	margin: 0px;
+	height: auto;
+	width: 40%;
+	position: absolute;
+	left: 30%;
+	top: 50%;
+	right: 30%;
+	font-size: 13pt;
+	background-color: rgba(255,255,255,0.3);
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+body {
+	background-repeat:no-repeat;
+}

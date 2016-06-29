@@ -1,0 +1,97 @@
+<html>
+<head>
+	<title>New Tab Wallpapaer Options</title>
+	<link href="options.css" rel="stylesheet" type="text/css" />
+	<script src="options.js"></script>
+</head>
+<body>
+	<form>
+		<table>
+			<tr>
+				<td><label for="subreddit">Subreddits:</label></td>
+				<td><textarea id="subreddit"></textarea></td>
+			</tr>
+			<tr>
+				<td><label for="sort">Sorted By:</label></td>
+				<td>
+					<select id="sort">
+						<option id="s1">New</option>
+						<option id="s2">Hot</option>
+						<option id="s3">Rising</option>
+						<option id="s4">Gilded</option>
+						<option id="s5">Top: Hour</option>
+						<option id="s6">Top: Today</option>
+						<option id="s7">Top: Week</option>
+						<option id="s8">Top: Month</option>
+						<option id="s9">Top: Year</option>
+						<option id="s10">Top: All Time</option>
+						<option id="s11">Controversial: Hour</option>
+						<option id="s12">Controversial: Today</option>
+						<option id="s13">Controversial: Week</option>
+						<option id="s14">Controversial: Month</option>
+						<option id="s15">Controversial: Year</option>
+						<option id="s16">Controversial: All Time</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td><label for="minScore">Minimum Score:</label></td>
+				<td><input type="number" id="minScore" value="1" max="999" min="-100"/></td>
+			</tr>
+			<tr>
+				<td><label for="position">Background Position:</label></td>
+				<td>
+					<select id="position">
+						<option id="p1">Center</option>
+						<option id="p2">Top</option>
+						<option id="p3">Bottom</option>
+						<option id="p4">Left</option>
+						<option id="p5">Right</option>
+						<option id="p6">Top Left</option>
+						<option id="p7">Top Right</option>
+						<option id="p8">Bottom Left</option>
+						<option id="p9">Bottom Right</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td><label for="size">Background Size:</label></td>
+				<td>
+					<select id="size">
+						<option id="z1">Cover</option>
+						<option id="z2">Contain</option>
+						<option id="z3">Fill</option>
+						<option id="z4">Original</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td><label for="color">Background Color:</label></td>
+				<td><input id="color" type="input" /></td>
+			</tr>
+			<tr>
+				<td>NSFW:</td>
+				<td>
+					<input id="nsfwNo" type="radio" name="nsfw"/><label for="nsfwNo">No</label><br />
+					<input id="nsfwYes" type="radio" name="nsfw" /><label for="nsfwYes">Yes</label><br />
+					<input id="nsfwOnly" type="radio" name="nsfw" /><label for="nsfwOnly">Only</label><br />
+				</td>
+			</tr>
+			<tr>
+				<td>GIFs:</td>
+				<td>
+					<input id="gifNo" type="radio" name="gif"/><label for="gifNo">No</label><br />
+					<input id="gifYes" type="radio" name="gif" /><label for="gifYes">Yes</label><br />
+					<input id="gifOnly" type="radio" name="gif" /><label for="gifOnly">Only</label><br />
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<button id="save">Save</button>
+					<span id="status"></span>
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
